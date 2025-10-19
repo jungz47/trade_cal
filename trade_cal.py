@@ -3,6 +3,19 @@ import yfinance as yf
 import pandas as pd
 from datetime import datetime
 
+# ซ่อน GitHub icon, Fork button, และ viewer badge
+hide_github_icon = """
+<style>
+#GithubIcon {
+    visibility: hidden !important;
+}
+.css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob, .styles_viewerBadge__1yB5_, .viewerBadge_link__1S4ls {
+    display: none !important;
+}
+</style>
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 # ชื่อแอป
 st.title("เครื่องมือคำนวณขนาดการเทรดง่ายๆ (มีประวัติการคำนวณ)")
 
